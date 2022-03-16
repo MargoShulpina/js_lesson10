@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fading-methods of jQuery</title>
+  <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("button").click(function () {
+        var p = $("p");
+        p.eq(2).animate({ right: '100px' }, "slow");
+        p.eq(4).animate({ right: '100px' }, "slow");        
+      });
+      $("img").click(function () {
+        $(this).animate({ top: '30px' }, "slow");        
+      });
+    });
+  </script>
+  <style type="text/css">
+    p {
+      padding: 5px;
+      text-align: center;
+      background-color: #e5eecc;
+      border: solid 1px #c3c3c3;
+      position: relative;
+      width: 900px;
+      margin-left: 200px;
+    }
+    img {
+      position: relative;
+      height: 130px;
+      margin-left: 500px;
+      cursor: pointer;
+    }
+    button {
+      background-color: #e5eecc;
+      transition: 0.5s all ease;
+      cursor: pointer;
+      font-weight: bold;
+      border: 1px solid #c3c3c3;
+      padding: 5px;
+    }
+    button:hover{
+      background-color: rgb(240, 229, 83);
+      border: 1px solid rgb(156, 150, 54);
+    }
+  </style>
+</head>
+<body>
+  <button>Запустить Анимацию!</button>
+  <p><b>1.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laudantium consequatur voluptatem corrupti praesentium necessitatibus sunt facilis. Odio assumenda iste dolorem magnam explicabo? Corrupti molestiae necessitatibus pariatur velit aliquam tempora.</p>
+
+  <img src="./img/1.png" alt="1">
+
+  <p><b>2.</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque suscipit quidem, laborum maiores ipsum, delectus eveniet accusantium temporibus explicabo dolor aspernatur perferendis incidunt est ut alias maxime. Quaerat, explicabo tempora ex atque hic, dolor consequatur voluptas laboriosam assumenda harum maxime.</p>
+
+  <img src="./img/2.png" alt="2">
+
+  <p><b>3.</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nobis alias velit nulla blanditiis minus dolores. Repellat culpa voluptate reprehenderit, harum consequatur, dolor unde inventore repudiandae voluptatum veritatis dolorem deserunt?</p>
+
+  <img src="./img/3.png" alt="3">
+
+  <p><b>4.</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat officia ullam, minus nostrum explicabo porro esse vitae quas voluptate obcaecati molestiae atque adipisci aspernatur unde dolor, in fugit cupiditate consequuntur ratione doloribus commodi neque. Consectetur, pariatur amet? Vero, aut tenetur!</p>
+
+  <img src="./img/4.png" alt="4">
+
+  <p><b>5.</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero dolorum eum aut ut optio nisi hic atque unde ex? Molestias modi quae fugiat minima exercitationem voluptatum, consequuntur non rerum, repellat ipsa nesciunt facilis tempore quam id ducimus placeat. Beatae, recusandae quae odio temporibus sint fuga itaque maxime impedit nostrum molestiae.</p>
+</body>
+</html>
